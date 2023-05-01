@@ -15,7 +15,7 @@ uploaded_file = st.file_uploader("Choose an csv file", type=["csv"])
 
 
 if uploaded_file:
-    test_file = pd.read_csv(uploaded_file)
+    test_file = pd.read_csv(uploaded_file, encoding='cp949')
     columns=test_file.columns
     if 'sentence_1' not in columns or 'sentence_2' not in columns or 'label' not in columns:
         st.warning('The CSV file is not in the correct format.')
