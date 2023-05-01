@@ -26,5 +26,4 @@ if uploaded_file:
     predicts_csv,
     "file.csv",
     "text/csv",
-    key='download-csv'
     )
