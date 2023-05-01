@@ -116,6 +116,6 @@ def csv_inference(test_file):
     predictions = list(round(float(i), 1) for i in torch.cat(predictions))
 
     # output 형식을 불러와서 예측된 결과로 바꿔주고, output.csv로 출력합니다.
-    output = test_file['sentence_1','sentence_2','label']
+    output = test_file[['sentence_1','sentence_2','label']]
     output['label'] = predictions
     return output
