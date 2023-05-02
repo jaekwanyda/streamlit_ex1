@@ -20,10 +20,10 @@ if uploaded_file:
     if 'sentence_1' not in columns or 'sentence_2' not in columns or 'label' not in columns:
         st.warning('The CSV file is not in the correct format.')
         
-    predicts_csv=csv_inference(test_file)
-    st.download_button(
-    "Press to Download",
-    predicts_csv,
-    "file.csv",
-    "text/csv",
-    )
+    #predicts_csv=csv_inference(test_file)
+    #st.download_button(
+    #"Press to Download",
+    #predicts_csv,
+    #"file.csv",
+    #"text/csv",
+    #)
